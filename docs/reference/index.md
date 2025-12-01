@@ -15,6 +15,9 @@ last_updated: 2025-12-01
 ---
 maxdepth: 1
 ---
-config.md
+neomutt.md
+account.md
+mailbox.md
+email.md
 ```
 
