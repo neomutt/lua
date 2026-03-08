@@ -1,27 +1,81 @@
-div.document div.documentwrapper {
-  max-width: 100%;
+/* ═══════════════════════════════════════════════════════════════
+   NeoMutt Lua — Custom Stylesheet
+   Palette: #005461  #018790  #00B7B5  #F4F4F4
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Wider content panel ────────────────────────────────────── */
+.bd-article-container {
+  max-width: 100% !important;
 }
 
+.bd-page-width {
+  max-width: 100% !important;
+}
+
+.bd-content {
+  max-width: 100% !important;
+}
+
+.bd-sidebar-secondary {
+  max-width: 250px !important;
+  min-width: 0 !important;
+  flex: 0 0 250px !important;
+}
+
+/* ── Brand colours — light mode ─────────────────────────────── */
+html[data-theme=light] {
+  --pst-color-primary: #005461;
+  --pst-color-primary-highlight: #018790;
+  --pst-color-link: #018790;
+  --pst-color-link-hover: #005461;
+  --pst-color-background: #e0f7f8;
+}
+
+/* ── Brand colours — dark mode ──────────────────────────────── */
+html[data-theme=dark] {
+  --pst-color-primary: #00B7B5;
+  --pst-color-primary-highlight: #018790;
+  --pst-color-link: #00B7B5;
+  --pst-color-link-hover: #018790;
+  --pst-color-background: #0d1e22;
+}
+
+/* ── Tables ─────────────────────────────────────────────────── */
 th {
   text-align: left;
-  background-color: #e8e8e8;
+  background-color: #005461;
+  color: #F4F4F4;
 }
 
-:root[data-mode=dark] th {
-  background-color: #383838;
-}
-
-:root[data-mode=darkest] th {
-  background-color: #181818;
+html[data-theme=dark] th {
+  background-color: #018790;
+  color: #F4F4F4;
 }
 
 div.document table.docutils td {
-    padding: 0 0.5em 0 0.25em;
-    vertical-align: top;
+  padding: 0 0.5em 0 0.25em;
+  vertical-align: top;
 }
 
 div.document table.docutils th {
-    padding: 0 0.5em 0 0.25em;
-    vertical-align: top;
+  padding: 0 0.5em 0 0.25em;
+  vertical-align: top;
 }
 
+/* ── Terminal highlight ─────────────────────────────────────── */
+html[data-theme=light] .highlight .hll {
+  background-color: #005461;
+  color: #F4F4F4;
+  display: block;
+}
+
+html[data-theme=dark] .highlight .hll {
+  background-color: #018790;
+  color: #F4F4F4;
+  display: block;
+}
+
+/* ── Footer accent ──────────────────────────────────────────── */
+.bd-footer {
+  border-top: 3px solid #018790 !important;
+}

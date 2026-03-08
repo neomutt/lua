@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'NeoMutt'
-copyright = '2025, Richard Russon'
+copyright = '2026, Richard Russon'
 author = 'flatcap'
 
 release = '0.1'
@@ -18,6 +18,11 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'myst_parser',
+    'sphinx_design',
+]
+
+myst_enable_extensions = [
+    'colon_fence',
 ]
 
 intersphinx_mapping = {
@@ -30,18 +35,27 @@ templates_path = ['_templates']
 
 # -- Options for HTML output
 
-html_theme = 'piccolo_theme'
+html_theme = 'sphinx_book_theme'
 html_static_path = ["_static"]
 html_css_files = ["custom.css"]
-html_logo = "_static/mutt-48x48.png"   # optional
+html_logo = "_static/logo.png"
+html_title = "NeoMutt Lua"
+html_favicon = "_static/favicon.png"
+
+html_theme_options = {
+    "max_navbar_depth": 2,
+    "pygments_light_style": "gruvbox-light",
+    "pygments_dark_style": "gruvbox-dark",
+    "use_download_button": False,
+}
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
 
 html_context = {
-    "display_github": True, # Integrate GitHub
-    "github_user": "flatcap", # Username
-    "github_repo": "test-read", # Repo name
-    "github_version": "main", # Version
-    "conf_py_path": "/docs/", # Path in the checkout to the docs root
+    "display_github": True,
+    "github_user": "flatcap",
+    "github_repo": "test-read",
+    "github_version": "main",
+    "conf_py_path": "/docs/",
 }
