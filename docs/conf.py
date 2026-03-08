@@ -12,24 +12,14 @@ version = '0.1.0'
 # -- General configuration
 
 extensions = [
-    'sphinx.ext.duration',
-    'sphinx.ext.doctest',
-    'sphinx.ext.autodoc',
-    'sphinx.ext.autosummary',
-    'sphinx.ext.intersphinx',
     'myst_parser',
     'sphinx_design',
+    'sphinx_copybutton',
 ]
 
 myst_enable_extensions = [
     'colon_fence',
 ]
-
-intersphinx_mapping = {
-    'python': ('https://docs.python.org/3/', None),
-    'sphinx': ('https://www.sphinx-doc.org/en/master/', None),
-}
-intersphinx_disabled_domains = ['std']
 
 templates_path = ['_templates']
 
@@ -47,6 +37,9 @@ html_theme_options = {
     "pygments_light_style": "gruvbox-light",
     "pygments_dark_style": "gruvbox-dark",
     "use_download_button": False,
+    "repository_url": "https://github.com/neomutt/lua",
+    "use_repository_button": True,
+    "use_sidenotes": True,
     "icon_links": [
         {
             "name": "GitHub",
@@ -55,7 +48,7 @@ html_theme_options = {
             "type": "fontawesome",
         },
         {
-            "name": "Sponsor",
+            "name": "Thanks",
             "url": "https://neomutt.org/sponsor",
             "icon": "fa-solid fa-heart",
             "type": "fontawesome",
@@ -74,8 +67,8 @@ epub_show_urls = 'footnote'
 
 html_context = {
     "display_github": True,
-    "github_user": "flatcap",
-    "github_repo": "test-read",
+    "github_user": "neomutt",
+    "github_repo": "lua",
     "github_version": "main",
     "conf_py_path": "/docs/",
 }

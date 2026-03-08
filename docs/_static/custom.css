@@ -79,3 +79,11 @@ html[data-theme=dark] .highlight .hll {
 .bd-footer {
   border-top: 3px solid #018790 !important;
 }
+
+svg.fa-twitter {
+   color: #55acee;
+}
+
+svg.fa-heart {
+   color: #c00000;
+}
