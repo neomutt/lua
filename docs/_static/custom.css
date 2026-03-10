@@ -144,3 +144,12 @@ html[data-theme=dark] .sponsor-link:hover {
 html[data-theme=dark] .sponsor-link:hover .sponsor-heart {
   color: #fff;
 }
+
+.devel-warning {
+  padding: 0 0.5em 0 0.5em;
+  border-radius: 6px;
+  font-size: 1.3rem;
+  background: #ff6688;
+  color: #000;
+  border: 1px solid black;
+}
