@@ -40,7 +40,7 @@ html_theme_options = {
     "repository_url": "https://github.com/neomutt/lua",
     "use_repository_button": True,
     "use_sidenotes": True,
-    "article_header_start": ["toggle-primary-sidebar.html", "devel.html"],
+    "article_header_start": ["breadcrumbs.html", "toggle-primary-sidebar.html", "devel.html"],
     "article_header_end": ["stars.html", "sponsor.html", "twitter.html", "article-header-buttons.html"],
 }
 
