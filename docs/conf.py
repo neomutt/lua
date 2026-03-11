@@ -40,8 +40,8 @@ html_theme_options = {
     "repository_url": "https://github.com/neomutt/lua",
     "use_repository_button": True,
     "use_sidenotes": True,
-    # "article_header_start": ["breadcrumbs", "toggle-primary-sidebar", "devel"],
-    # "article_header_end": ["stars.html", "sponsor.html", "twitter.html", "article-header-buttons.html"],
+    "article_header_start": ["breadcrumbs", "toggle-primary-sidebar", "devel"],
+    "article_header_end": ["stars.html", "sponsor.html", "twitter.html", "article-header-buttons.html"],
 }
 
 # -- Options for EPUB output

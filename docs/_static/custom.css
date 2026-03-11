@@ -148,8 +148,24 @@ html[data-theme=dark] .sponsor-link:hover .sponsor-heart {
 .devel-warning {
   padding: 0 0.5em 0 0.5em;
   border-radius: 6px;
-  font-size: 1.3rem;
-  background: #ff6688;
+  font-size: 1.2rem;
+  background: #ffaf4d;
   color: #000;
   border: 1px solid black;
+}
+
+/* ── Article header toolbar — force horizontal flex layout ─── */
+.header-article-items__end, .header-article-items__start {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header-article-items__end .header-article-item,
+.header-article-items__start .header-article-item {
+{
+  display: flex !important;
+  align-items: center;
 }
