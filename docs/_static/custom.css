@@ -170,7 +170,6 @@ html[data-theme=dark] .sponsor-link:hover .sponsor-heart {
 
 .header-article-items__end .header-article-item,
 .header-article-items__start .header-article-item {
-{
   display: flex !important;
   align-items: center;
 }
